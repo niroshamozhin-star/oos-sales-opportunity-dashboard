@@ -24,11 +24,17 @@ plus an AI assistant grounded on the live data via an Azure AI Foundry agent.
 **AI Sales Assistant** — chat grounded on the live data via an Azure AI Foundry agent
 ![AI Sales Assistant](docs/screenshots/assistant.png)
 
+**AI Sales Assistant in action** — a real answer grounded on live Texas OOS records, not fabricated
+![AI Sales Assistant answering a question](docs/screenshots/assistant-chat.png)
+
 **Assign Salesperson** — opportunity #447 (513356 NB LTD), unassigned, ready to route to the rep for its state
 ![Assign Salesperson](docs/screenshots/drawer-assign-prompt.png)
 
 **Generate Outreach** — the same opportunity, now assigned, after generating outreach via the Foundry agent
 ![Generate outreach](docs/screenshots/drawer-4-generated.png)
+
+**Send Outreach** — the same opportunity after Send Outreach, status progressed to Outreach Sent
+![Outreach sent](docs/screenshots/drawer-6-sent.png)
 
 **Real outreach email** — actually delivered by the Send Outreach action for that same opportunity (sender address cropped)
 ![Outreach email received](docs/screenshots/outreach-email-received.png)
