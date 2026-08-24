@@ -1,0 +1,23 @@
+state,region,salesperson_name,salesperson_email,manager_name,manager_email
+TX,West,Nirosha (Rep A),nirosha.repa@example.com,Jamie Torres,jamie.torres@example.com
+TX,West,Nirosha (Rep B),nirosha.repb@example.com,Jamie Torres,jamie.torres@example.com
+FL,Southeast,Nirosha (Rep C),nirosha.repc@example.com,Priya Shah,priya.shah@example.com
+FL,Southeast,Nirosha (Rep D),nirosha.repd@example.com,Priya Shah,priya.shah@example.com
+GA,Southeast,Nirosha (Rep C),nirosha.repc@example.com,Priya Shah,priya.shah@example.com
+GA,Southeast,Nirosha (Rep D),nirosha.repd@example.com,Priya Shah,priya.shah@example.com
+CA,West,Nirosha (Rep A),nirosha.repa@example.com,Jamie Torres,jamie.torres@example.com
+CA,West,Nirosha (Rep B),nirosha.repb@example.com,Jamie Torres,jamie.torres@example.com
+OH,Midwest,Nirosha (Rep A),nirosha.repa@example.com,Chris Patel,chris.patel@example.com
+NY,Northeast,Jordan Lee,jordan.lee@example.com,Alex Morgan,alex.morgan@example.com
+NJ,Northeast,Jordan Lee,jordan.lee@example.com,Alex Morgan,alex.morgan@example.com
+PA,Northeast,Jordan Lee,jordan.lee@example.com,Alex Morgan,alex.morgan@example.com
+MA,Northeast,Jordan Lee,jordan.lee@example.com,Alex Morgan,alex.morgan@example.com
+MD,Northeast,Taylor Kim,taylor.kim@example.com,Alex Morgan,alex.morgan@example.com
+VA,Northeast,Taylor Kim,taylor.kim@example.com,Alex Morgan,alex.morgan@example.com
+NC,Southeast,Sam Rivera,sam.rivera@example.com,Priya Shah,priya.shah@example.com
+SC,Southeast,Sam Rivera,sam.rivera@example.com,Priya Shah,priya.shah@example.com
+TN,Southeast,Sam Rivera,sam.rivera@example.com,Priya Shah,priya.shah@example.com
+IL,Midwest,Casey Nguyen,casey.nguyen@example.com,Chris Patel,chris.patel@example.com
+IN,Midwest,Casey Nguyen,casey.nguyen@example.com,Chris Patel,chris.patel@example.com
+WA,West,Avery Brooks,avery.brooks@example.com,Jamie Torres,jamie.torres@example.com
+AZ,West,Riley Cooper,riley.cooper@example.com,Jamie Torres,jamie.torres@example.com

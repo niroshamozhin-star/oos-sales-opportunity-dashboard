@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pandas
+python-dotenv
+azure-ai-projects
+azure-identity
+azure-search-documents
+openai

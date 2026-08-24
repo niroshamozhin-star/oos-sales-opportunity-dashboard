@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --font-display: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  /* Always reserve the scrollbar's width, even when content doesn't
+     overflow yet. Without this, a filter that changes a table's row
+     count can make the page's scrollbar appear/disappear, shifting the
+     available width for every width="100%" chart on the page and
+     causing a visible flicker as they all reflow. */
+  scrollbar-gutter: stable;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: #0f172a;
+  background-color: #eef3fb;
+  background-image:
+    radial-gradient(1100px 480px at 8% -8%, rgba(42, 120, 214, 0.16), transparent 60%),
+    radial-gradient(900px 460px at 100% 0%, rgba(74, 58, 167, 0.12), transparent 55%),
+    linear-gradient(180deg, #eef3fb 0%, #f4f7fc 45%, #eef1f8 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Default table border-collapse is "separate" with border-spacing, which
+   shows the page background through the seams between cells instead of
+   the row's own background - breaks solid header/zebra-stripe colors.
+   Applied globally so every data table in the app renders consistently. */
+table {
+  border-collapse: collapse;
+}
+
+h1, h2, h3, h4,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.markdown-chat p {
+  margin: 0 0 0.6em 0;
+}
+.markdown-chat p:last-child {
+  margin-bottom: 0;
+}
+.markdown-chat ul,
+.markdown-chat ol {
+  margin: 0 0 0.6em 1.25em;
+  padding: 0;
+}
+.markdown-chat li {
+  margin-bottom: 0.2em;
+}
+.markdown-chat strong {
+  font-weight: 600;
+}
+.markdown-chat code {
+  background: #e2e8f0;
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  font-size: 0.85em;
+}
+.markdown-chat table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.4em 0 0.8em 0;
+  font-size: 0.9em;
+}
+.markdown-chat th,
+.markdown-chat td {
+  border: 1px solid #cbd5e1;
+  padding: 0.35em 0.6em;
+  text-align: left;
+}
+.markdown-chat th {
+  background: #e2e8f0;
+  font-weight: 600;
+}
