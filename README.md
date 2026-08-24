@@ -4,6 +4,26 @@ A full-stack prototype that turns FMCSA Out-of-Service (OOS) carrier data into a
 working sales opportunity pipeline: enrich → assign → generate outreach → track,
 plus an AI assistant grounded on the live data via an Azure AI Foundry agent.
 
+> Currently runs locally (see **Running locally** below) — screenshots below are
+> from a live local run against the real SQLite dataset.
+
+## Screenshots
+
+**Overview** — status donut, state breakdown, recent opportunities, 30/60/90-day window
+![Overview](docs/screenshots/overview.png)
+
+**Opportunities** — sortable, filterable, paginated full opportunity list
+![Opportunities](docs/screenshots/opportunities.png)
+
+**Sales Team** — per-rep KPIs and portfolio, filterable by region/manager
+![Sales Team](docs/screenshots/sales-team.png)
+
+**Outreach Management** — generated/sent/pending KPIs, by-state and by-salesperson charts, monthly trend drill-down
+![Outreach](docs/screenshots/outreach.png)
+
+**AI Sales Assistant** — chat grounded on the live data via an Azure AI Foundry agent
+![AI Sales Assistant](docs/screenshots/assistant.png)
+
 ## Architecture
 
 - **Backend** — FastAPI + SQLite (`backend/`). Raw `sqlite3` repository layer,
