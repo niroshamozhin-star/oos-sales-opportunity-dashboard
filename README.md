@@ -24,6 +24,12 @@ plus an AI assistant grounded on the live data via an Azure AI Foundry agent.
 **AI Sales Assistant** — chat grounded on the live data via an Azure AI Foundry agent
 ![AI Sales Assistant](docs/screenshots/assistant.png)
 
+**Opportunity workflow** — assign a salesperson, then generate outreach via the Foundry agent
+![Assign and generate outreach](docs/screenshots/drawer-4-generated.png)
+
+**Real outreach email** — actually delivered by the Send Outreach action (sender address cropped)
+![Outreach email received](docs/screenshots/outreach-email-received.png)
+
 ## Architecture
 
 - **Backend** — FastAPI + SQLite (`backend/`). Raw `sqlite3` repository layer,
@@ -88,6 +94,7 @@ The frontend expects the backend at `http://localhost:8700` (see
 
 ## Data
 
-`data/OOS_Enriched_2026.csv` is FMCSA Out-of-Service data enriched with
+`backend/scripts/init_db.py` loads FMCSA Out-of-Service data enriched with
 location fields from the FMCSA MCMIS Company Census API — both public
-government data sources.
+government data sources. The enriched CSV itself lives in the sibling
+`AzureFoundry` project, not in this repo.

@@ -13,7 +13,7 @@ rather than crashing the dashboard."""
 
 import os
 import smtplib
-from email.mime.text import MIMEText
+from email.message import EmailMessage
 
 from dotenv import load_dotenv
 
@@ -37,25 +37,20 @@ def send_outreach_email(carrier_name: str, salesperson_name: str, message: str):
     if not is_configured():
         return False, "SMTP is not configured (missing SMTP_USERNAME/SMTP_APP_PASSWORD)."
 
-    subject = f"[Demo] Outreach: {carrier_name} (assigned to {salesperson_name})"
-    body = (
-        f"Salesperson: {salesperson_name}\n"
-        f"Carrier: {carrier_name}\n\n"
-        f"Outreach message:\n{message}\n\n"
-        "---\n"
-        "This is a demo email workflow from the OOS Sales Opportunity Command Center prototype."
-    )
+    subject = f"Exploring New Sales Opportunities – {carrier_name}"
+    body = f"{message}\n\nBest regards,\n{salesperson_name}"
 
-    msg = MIMEText(body)
+    msg = EmailMessage()
     msg["Subject"] = subject
     msg["From"] = FROM_EMAIL
     msg["To"] = DEMO_TO_EMAIL
+    msg.set_content(body)
 
     try:
         with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as server:
             server.starttls()
             server.login(SMTP_USERNAME, SMTP_APP_PASSWORD)
-            server.sendmail(FROM_EMAIL, [DEMO_TO_EMAIL], msg.as_string())
+            server.send_message(msg)
         return True, None
     except Exception as e:
         return False, f"Email send failed: {e}"
